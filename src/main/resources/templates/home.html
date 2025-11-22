@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Portal - Home</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Quize craze</h1>
+        <nav>
+            <a href="/login">Login</a>
+            <a href="/register">Register</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Take quizzes,Test your knowledge,unleash fun !!</h2>
+    </main>
+
+    <footer>
+        <p>© 2025 Quiz Portal | All Rights Reserved</p>
+    </footer>
+</body>
+<style>
+/* Reset & base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #cce7ff, #e6f0ff); /* Soft Blue Gradient */
+  color: #003366;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  background-color: rgba(0, 191, 165, 0.55); /* Teal Glass */
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 8px rgba(0, 150, 136, 0.35);
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  color: #006064; /* Dark Teal */
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #00796b;  /* Teal Border */
+  font-weight: 600;
+  border: 2px solid #00796b;
+  padding: 8px 18px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #00796b; /* Teal Fill */
+  color: white;
+}
+
+/* Main content */
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+main h2 {
+  font-size: 1.4rem;
+  color: #004d40; /* Dark Teal Text */
+  background-color: rgba(204, 229, 255, 0.95); /* Light Blue Glass */
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 119, 190, 0.25);
+}
+
+/* Footer */
+footer {
+  background-color: rgba(204, 235, 255, 0.85);
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+  color: #003366;
+  box-shadow: 0 -2px 6px rgba(0, 119, 190, 0.15);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  nav a {
+    width: 80%;
+    text-align: center;
+  }
+
+  main h2 {
+    font-size: 1.1rem;
+    padding: 20px;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+}
+
+</style>
+</html>

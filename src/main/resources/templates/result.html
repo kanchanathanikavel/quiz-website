@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz Result</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #cce7ff, #e6f0ff); /* Soft blue gradient */
+  margin: 0;
+  padding: 0;
+  color: #004d40; /* Dark teal text */
+}
+
+main {
+  max-width: 600px;
+  margin: 50px auto;
+  background: rgba(204, 229, 255, 0.97); /* Light blue container */
+  padding: 30px 20px;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 119, 190, 0.25); /* Blue shadow */
+  text-align: center;
+}
+
+h2 {
+  color: #004d40; /* Dark teal heading */
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 1rem;
+  color: #00695c; /* Teal text */
+  margin-bottom: 30px;
+}
+
+a {
+  display: inline-block;
+  background-color: #00897b; /* Teal button */
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 25px; /* Candy pill button */
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.1s;
+}
+
+a:hover {
+  background-color: #00695c; /* Dark teal hover */
+  transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+  main {
+    margin: 20px;
+    padding: 20px;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 0.95rem;
+  }
+  a {
+    font-size: 0.95rem;
+    padding: 10px 18px;
+  }
+}
+  </style>
+</head>
+<body>
+  <div th:replace="fragments/header :: header"></div>
+
+  <main>
+    <h2>🎉 Quiz Completed!</h2>
+    <p>Your result has been emailed to you successfully.</p>
+    <a th:href="@{/participant/dashboard}">Go Back to Dashboard</a>
+  </main>
+
+  <div th:replace="fragments/footer :: footer"></div>
+</body>
+</html>
